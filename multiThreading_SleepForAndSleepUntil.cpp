@@ -41,3 +41,37 @@ int main()
  
  return 0;
 }
+
+
+// #include<iostream>
+// #include<thread>
+// #include<chrono>
+
+// using namespace std;
+
+// void Functn()
+// {
+//  cout<<"Functn is started processing"<<endl;
+//  this_thread::sleep_for(5s);
+//  cout<<"Functn is completed"<<endl;
+// }
+
+// void Functn2()
+// {
+//  cout<<"Functn 2 is started processing"<<endl;
+//  auto start=chrono::system_clock::now();
+//  auto end=start+10s;
+//  this_thread::sleep_until(end);
+//  cout<<"Functn 2 is completed"<<endl;
+// }
+
+// int main()
+// {
+//  cout<<"Main thread is processing"<<endl;
+//  thread t1(Functn);
+//  thread t2(Functn2);
+//  t1.join();
+//  t2.join();
+//  cout<<"Main thread has resumed !!!"<<endl;
+//  return 0;
+// }
