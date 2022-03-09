@@ -16,6 +16,9 @@ int main()
  cout<<"Main Thread"<<endl;
  thread t1;// t1 is thread object which does not represent a thread
  //t1.join();// System Error as t1 is not assocciated with any thread
+ //terminate called after throwing an instance of 'std::system_error'
+ //what():  Invalid argument
+
  if(t1.joinable())
   cout<<"t1 is joinable"<<endl;
  else
